@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PCCOE | PUNE</title>
     
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/header.css">
@@ -16,15 +16,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <style>
         .bar::after {
-width: 180px;
-margin-left: auto;
-margin-right: auto;
-margin-top: 40px;
-display: block;
-content: "";
-background: #16f4d3;
-height: 2px;
-}
+            width: 180px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            display: block;
+            content: "";
+            background: #16f4d3;
+            height: 2px;
+            }
 
 a{ 
     text-decoration: none;
@@ -54,6 +54,66 @@ a{
 .bcd h5{
     color:red;
 }
+
+.navbar {
+    overflow: hidden;
+    background-color: #29bbdf;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
     </style>
 </head>
 <body>
@@ -61,41 +121,55 @@ a{
         <div class="row">
             <div class="col-lg-2">
                 <center>
-                    <img style="height:150px;width:auto;" src="Capture.PNG" alt="">
+                    <div style="padding-top:20px;"><img style="height:130px;width:auto;" src="Capture.jpg" alt=""></div>
                 </center>
             </div>
             <div class="col-lg-8">
                 <center>
-                    <p><b>PIMPRI CHINCHWAD EDUCATION TRUST'S</b></p>
-                <h3 style="color:red;"><b>PIMPRI CHINCHWAD COLLEGE OF ENGINEERING</b></h3>
-                <P><B>NBA</B> Accredited | NAAC Accredited with <b>'A'</b> Grade | An <b>Autonomous</b> Institute | <b>AICTE Approved</b>
-                      <b>ISO 9001: 2015</b> Certified | Permanently Affilated to <b>SPPU,</b> Pune
-               </P>
+                    <div style="padding-top:20px;">
+                        <p style="font-family: 'Quantico',sans-serif;"><b>PIMPRI CHINCHWAD EDUCATION TRUST'S</b></p>
+                    </div>
+                    <h3 style="color:red;font-family: 'Quantico',sans-serif;"><b>PIMPRI CHINCHWAD COLLEGE OF ENGINEERING</b></h3>
+                    <div style="padding:0px;">
+                        <P style="font-family: 'Quantico',sans-serif;"><B>NBA</B> Accredited | NAAC Accredited with <b>'A'</b> Grade | An <b>Autonomous</b> Institute | <b>AICTE Approved</b>
+                            <b>ISO 9001: 2015</b> Certified | Permanently Affilated to <b>SPPU,</b> Pune
+                     </P>
+                    </div>
                 </center>
             </div>
             <div class="col-lg-2">
                 <center>
-                    <img style="height:150px;width:auto;" src="Capture1.PNG" alt="">
+                    <div style="padding-top:20px;"><img style="height:150px;width:auto;" src="Capture1.PNG" alt=""></div>
                 </center>
             </div>
         </div>
     </div>
-    <nav style="background:#29bbdf;height:50px;">       
+
+    <div class="navbar">
         <center>
-            <a style="padding:20px;">Home</a>
-            <a href="padding:20px;">About Us</a>
-            <a style="padding:20px;">CONTACT US</a>
+            <a href="#">Home</a>            
+            <div class="dropdown">
+                <button class="dropbtn">About Us 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div> 
+            <a href="#">Contact</a>
         </center>
-    </nav>
-    <nav style="background:gray;height:50px;">       
-        
-            <a style="float:left">Heighlights</a>
+      </div>
+      <div class="navbar" style="display:block;background:gray;">
+        <center>
+            <a style="float:left ;color:white;">Heighlights</a>
             
-            <a style="float:right">ABCDEFGH</a>
-        
-    </nav>
+            <a style="float:right;color:white;right:0;position: relative;">A B C D E F G H</a>
+        </center>
+      </div>
     <div>
-        <img style="width:100%;height:auto;" src="cp.jpeg" alt="">
+        <img style="width:100%;height:auto;" src="cp.png" alt="">
     </div>
     <div style="padding-bottom:30px;">
         <div class="container">
@@ -133,26 +207,34 @@ a{
             <div class="row">
                 <div class="col-lg-3 my-3 ">
                     <div class="shadow">
-                        <img src="1.PNG" alt="">
-                        <h5>Computer Engineering</h5>
+                        <div style="padding:20px;">
+                            <img src="1.PNG" alt="">
+                            <h5>Computer Engineering</h5>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 my-3 ">
                     <div class="shadow">
-                        <img src="2.PNG" alt="">
-                        <h5>Electronics and telecommunication Engineering</h5>
+                        <div style="padding:20px;">
+                            <img src="2.PNG" alt="">
+                            <h5>Electronics and telecommunication Engineering</h5>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 my-3 ">
                     <div class="shadow">
-                        <img src="3.PNG" alt="">
-                        <h5>Information technology Engineering</h5>
+                        <div style="padding:20px;">
+                            <img src="3.PNG" alt="">
+                            <h5>Information technology Engineering</h5>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 my-3 ">
                     <div class="shadow">
-                        <img src="4.PNG" alt="">
-                    <h5>Mechanical Engineering</h5>
+                        <div style="padding:20px;">
+                            <img src="4.PNG" alt="">
+                            <h5>Mechanical Engineering</h5>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -204,9 +286,9 @@ a{
             </div>
         </center>      
     </footer>
-    <script src="script.js"></script>
+    
      <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
+    
 </body>
 </html>
