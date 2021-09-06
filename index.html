@@ -32,8 +32,27 @@ a{
     border-radius: 1px black solid;
 }
 
-.abc p{
-    border-bottom: black 1px solid;
+.abc a{
+    border-bottom: rgb(255, 255, 255) 1px solid;
+    color:white;
+}
+
+.abc h6{    
+    color:white;
+}
+
+.abc h4{
+    color:white;
+}
+
+.shadow{
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 8%), 0 5px 8px 0 rgb(0 0 0 / 12%), 0 1px 14px 0 rgb(0 0 0 / 6%);
+    width: 100%;
+    height:200px;
+}
+
+.bcd h5{
+    color:red;
 }
     </style>
 </head>
@@ -64,15 +83,15 @@ a{
     <nav style="background:#29bbdf;height:50px;">       
         <center>
             <a style="padding:20px;">Home</a>
-            <a style="padding:20px;">About Us</a>
+            <a href="padding:20px;">About Us</a>
             <a style="padding:20px;">CONTACT US</a>
         </center>
     </nav>
     <nav style="background:gray;height:50px;">       
         
-            <a style="padding:20px;float:left">Heighlights</a>
+            <a style="float:left">Heighlights</a>
             
-            <a style="padding:20px;float:right">ABCDEFGH</a>
+            <a style="float:right">ABCDEFGH</a>
         
     </nav>
     <div>
@@ -101,7 +120,7 @@ a{
         </div>
     </div>
 
-    <div style="background:#f3f4f6;padding-bottom:30px;">
+    <div class="bcd" style="background:#f3f4f6;padding-bottom:30px;">
         <div class="container">
             <div style="padding:60px;" class="bar">
                 <center>
@@ -112,21 +131,29 @@ a{
         <div class="container">
             <center>
             <div class="row">
-                <div class="col-lg-3 my-3" style="box-shadow: 0 3px 5px -1px rgb(0 0 0 / 8%), 0 5px 8px 0 rgb(0 0 0 / 12%), 0 1px 14px 0 rgb(0 0 0 / 6%);">
-                    <img src="1.PNG" alt="">
-                    <h5>Computer Engineering</h5>
+                <div class="col-lg-3 my-3 ">
+                    <div class="shadow">
+                        <img src="1.PNG" alt="">
+                        <h5>Computer Engineering</h5>
+                    </div>
                 </div>
-                <div class="col-lg-3 my-3" style="box-shadow: 0 3px 5px -1px rgb(0 0 0 / 8%), 0 5px 8px 0 rgb(0 0 0 / 12%), 0 1px 14px 0 rgb(0 0 0 / 6%);">
-                    <img src="2.PNG" alt="">
-                    <h5>Electronics and telecommunication Engineering</h5>
+                <div class="col-lg-3 my-3 ">
+                    <div class="shadow">
+                        <img src="2.PNG" alt="">
+                        <h5>Electronics and telecommunication Engineering</h5>
+                    </div>
                 </div>
-                <div class="col-lg-3 my-3" style="box-shadow: 0 3px 5px -1px rgb(0 0 0 / 8%), 0 5px 8px 0 rgb(0 0 0 / 12%), 0 1px 14px 0 rgb(0 0 0 / 6%);">
-                    <img src="3.PNG" alt="">
-                    <h5>Information technology Engineering</h5>
+                <div class="col-lg-3 my-3 ">
+                    <div class="shadow">
+                        <img src="3.PNG" alt="">
+                        <h5>Information technology Engineering</h5>
+                    </div>
                 </div>
-                <div class="col-lg-3 my-3" style="box-shadow: 0 3px 5px -1px rgb(0 0 0 / 8%), 0 5px 8px 0 rgb(0 0 0 / 12%), 0 1px 14px 0 rgb(0 0 0 / 6%);">
-                    <img src="4.PNG" alt="">
+                <div class="col-lg-3 my-3 ">
+                    <div class="shadow">
+                        <img src="4.PNG" alt="">
                     <h5>Mechanical Engineering</h5>
+                    </div>
                 </div>
             </div>
             </center>
@@ -134,18 +161,18 @@ a{
     </div>
 
     <div class="abc" style="background:#29bbdf;">
-        <div class="container">
+        <div style="padding-top:30px;padding-bottom:30px;" class="container">
             <div class="row">
                 <div class="col-lg-3">
                     <h4 style="padding:20px;">
                         <b>GET IN TOUCH</b>
                     </h4>
-                    <P>Sector -26, Pradhikaran, Nigdi,
+                    <h6>Sector -26, Pradhikaran, Nigdi,
                         Near Akurdi Railway Station,
-                        Pune - 411 044.</P>
-                    <p>020 – 2765 3168, 2765 3166,
-                        +91 9960984347</p>
-                        <p>pccoeadmin@gmail.com</p>
+                        Pune - 411 044.</h6>
+                    <h6>020 – 2765 3168, 2765 3166,
+                        +91 9960984347</h6>
+                        <h6>pccoeadmin@gmail.com</h6>
                 </div>
                 <div class="col-lg-3">
                     <h4 style="padding:20px;"><b>Important Links</b></h4>
@@ -165,7 +192,7 @@ a{
                 </div>
                 <div class="col-lg-3">
                     <h4 style="padding:20px;"><b>Location</b></h4>
-                    <img style="height:auto;width:80%;border-radius: 30px;" src="map.PNG" alt="">
+                    <img style="height:auto;width:80%;border-radius: 10px;" src="map.PNG" alt="">
                 </div>
             </div>
         </div>
